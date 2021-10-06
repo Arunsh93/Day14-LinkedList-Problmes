@@ -24,7 +24,23 @@ namespace LinkedListProject
                 }
                 temp.next = node;
             }
-            Console.WriteLine("{0} Added to the List", node.data);
+        }
+
+        public void Print()
+        {
+            if(this.head == null)
+            {
+                Console.WriteLine("This List is Empty");
+            }
+            else
+            {
+                Node temp = head;
+                while(temp != null)
+                {
+                    Console.WriteLine(temp.data);
+                    temp = temp.next;
+                }
+            }
         }
     }
 }

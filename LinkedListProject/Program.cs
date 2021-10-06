@@ -13,6 +13,7 @@ namespace LinkedListProject
             linkedList.Add(30);
             linkedList.Add(70);
 
+            linkedList.Print();
         }
     }
 }
