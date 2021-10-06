@@ -8,7 +8,7 @@ namespace LinkedListProject
     {
         public Node head;
 
-        public void Add(int value)
+        public void Append(int value)
         {
             Node node = new Node(value);
             if (this.head == null)
