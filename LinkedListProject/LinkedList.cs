@@ -65,13 +65,13 @@ namespace LinkedListProject
             }
         }*/
 
-      /*  internal Node RemoveNode()
+       /* internal Node RemoveNode()
         {
             if (this.head == null)
             {
                 return null;
             }
-            this.head = this.head.next;
+            this.head = this.head.next.next;
             return this.head;
         }*/
 
@@ -86,6 +86,26 @@ namespace LinkedListProject
             return head;
         }*/
 
+        public void DeleteNode(int data)
+        {
+            Node temp = head, previous = null;
+
+            if(temp != null && temp.data == data)
+            {
+                head = temp.next;
+                return;
+            }
+            while(temp != null  && temp.data != data)
+            {
+                previous = temp;
+                temp = temp.next;
+            }
+            if(temp == null)
+            {
+                return;
+            }
+            previous.next = temp.next;
+        }
         public bool Search(int value)
         {
             if(this.head != null)
@@ -114,6 +134,25 @@ namespace LinkedListProject
                     temp = temp.next;
                 }
             }
+        }
+        public int Size()
+        {
+            int size = 0;
+            if (this.head == null)
+            {
+                Console.WriteLine("This List is Empty");
+            }
+            else
+            {
+                
+                Node temp = head;
+                while (temp != null)
+                {
+                    size++;
+                    temp = temp.next;
+                }
+            }
+            return size;
         }
     }
 }

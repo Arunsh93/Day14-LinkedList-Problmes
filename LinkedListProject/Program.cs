@@ -22,6 +22,13 @@ namespace LinkedListProject
             Console.WriteLine("List after inserting 40: ");
             linkedList.Print();
 
+            linkedList.DeleteNode(40);
+            Console.WriteLine("After deleting 40:");
+            linkedList.Print();
+
+            int sizeOfList = linkedList.Size();
+            Console.WriteLine("Size of an Linked List is: " + sizeOfList);
+
 
             /*linkedList.Search(30);
             linkedList.Print();*/
