@@ -29,17 +29,24 @@ namespace LinkedListProject
             int sizeOfList = linkedList.Size();
             Console.WriteLine("Size of an Linked List is: " + sizeOfList);
 
-
             /*linkedList.Search(30);
             linkedList.Print();*/
 
-           /* linkedList.RemoveLastNode();
-            Console.WriteLine("After Deleting the Last node: ");
-            linkedList.Print();*/
+            /* linkedList.RemoveLastNode();
+             Console.WriteLine("After Deleting the Last node: ");
+             linkedList.Print();*/
 
             /*linkedList.RemoveNode();
             Console.WriteLine("After Deleting the First node: ");
             linkedList.Print();*/
+
+            SortedLinkedList sortedList = new SortedLinkedList();
+            sortedList.Add(56);
+            sortedList.Add(30);
+            sortedList.Add(40);
+            sortedList.Add(70);
+            Console.WriteLine("The ordered list after inserting 56,30,40,70 using sorted linked list is : ");
+            sortedList.Print();
         }
     }
 }
