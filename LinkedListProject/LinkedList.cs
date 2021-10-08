@@ -22,7 +22,6 @@ namespace LinkedListProject
                 temp.next = node;
             }
         }
-
         public void InsertInBetweenNodes(int position, int data)
         {
             Node node = new Node(data);

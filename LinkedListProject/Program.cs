@@ -18,8 +18,13 @@ namespace LinkedListProject
             Console.WriteLine("List after inserting 30: ");
             linkedList.Print();
 
-            linkedList.Search(30);
+            linkedList.InsertInBetweenNodes(3, 40);
+            Console.WriteLine("List after inserting 40: ");
             linkedList.Print();
+
+
+            /*linkedList.Search(30);
+            linkedList.Print();*/
 
            /* linkedList.RemoveLastNode();
             Console.WriteLine("After Deleting the Last node: ");
