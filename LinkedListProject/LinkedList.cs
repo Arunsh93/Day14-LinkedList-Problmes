@@ -66,7 +66,7 @@ namespace LinkedListProject
             }
         }*/
 
-        internal Node RemoveNode()
+      /*  internal Node RemoveNode()
         {
             if (this.head == null)
             {
@@ -74,6 +74,17 @@ namespace LinkedListProject
             }
             this.head = this.head.next;
             return this.head;
+        }*/
+
+        internal Node RemoveLastNode()
+        {
+            Node newNode = head;
+            while(newNode.next.next != null)
+            {
+                newNode = newNode.next;
+            }
+            newNode.next = null;
+            return head;
         }
 
         public void Print()
