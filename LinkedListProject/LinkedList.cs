@@ -66,6 +66,16 @@ namespace LinkedListProject
             }
         }*/
 
+        internal Node RemoveNode()
+        {
+            if (this.head == null)
+            {
+                return null;
+            }
+            this.head = this.head.next;
+            return this.head;
+        }
+
         public void Print()
         {
             if (this.head == null)

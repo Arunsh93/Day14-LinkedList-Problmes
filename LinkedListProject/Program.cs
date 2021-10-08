@@ -17,6 +17,10 @@ namespace LinkedListProject
             linkedList.InsertInBetweenNodes(2, 30);
             Console.WriteLine("List after inserting 30: ");
             linkedList.Print();
+
+            linkedList.RemoveNode();
+            Console.WriteLine("After Deleting the First node: ");
+            linkedList.Print();
         }
     }
 }
